@@ -1,12 +1,12 @@
 canvas{
-    boarder: 5px solid black;
+    
     height: 100%;
     width: 100%;
+    margin: 0px;
 
 }
 
 body{
-    margin = 0;
-    background: #999;
+    background: black;
 }
 
