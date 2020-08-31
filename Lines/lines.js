@@ -4,7 +4,7 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 
-window.addEventListener("click", randomLines)
+window.addEventListener("click", randomLines);
 // var i = 1;
 // while(i*10 < canvas.width+1){
 //     c.beginPath();
