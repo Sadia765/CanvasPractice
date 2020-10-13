@@ -1,10 +1,14 @@
-var canvas = document.querySelector('canvas');
+var canvas = document.querySelector("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+var c = canvas.getContext("2d");
+var c = canvas.getContext("2d");
 
-var c = canvas.getContext('2d');
+window.onload = function () {
+  window.addEventListener("click", randomLines);
+  randomLines();
+};
 
-window.addEventListener("click", randomLines);
 // var i = 1;
 // while(i*10 < canvas.width+1){
 //     c.beginPath();
@@ -24,17 +28,29 @@ window.addEventListener("click", randomLines);
 //     j++;
 // }
 
-var colors = ['red','maroon', 'yellow', 'olive', 'lime', 'green', 'aqua', 'teal', 'blue', 'navy', 'fuchsia', 'purple'];
-function randomLines(){
-
-    for(var k = 0; k<130; k++){
-        c.beginPath();
-        c.moveTo(35*k*k*Math.random(),26*k*k*Math.random());
-        c.lineTo(50*k*Math.random(), 11*k*Math.random());
-        c.strokeStyle = colors[Math.floor(12*Math.random())];
-        c.stroke();
-        k++;
-    }
+var colors = [
+  "red",
+  "maroon",
+  "yellow",
+  "olive",
+  "lime",
+  "green",
+  "aqua",
+  "teal",
+  "blue",
+  "navy",
+  "fuchsia",
+  "purple",
+];
+function randomLines() {
+  for (var k = 0; k < 130; k++) {
+    c.beginPath();
+    c.moveTo(35 * k * k * Math.random(), 26 * k * k * Math.random());
+    c.lineTo(50 * k * Math.random(), 11 * k * Math.random());
+    c.strokeStyle = colors[Math.floor(12 * Math.random())];
+    c.stroke();
+    k++;
+  }
 }
 
 // randomLines();
@@ -49,7 +65,6 @@ function randomLines(){
 // c.strokeStyle = 'red';
 // c.stroke();
 
-
 // c.beginPath();
 // c.moveTo(900,300);
 // c.lineTo(800,300);
@@ -59,8 +74,3 @@ function randomLines(){
 // c.closePath();
 // c.strokeStyle = 'blue';
 // c.stroke();
-
-
-
-
-
