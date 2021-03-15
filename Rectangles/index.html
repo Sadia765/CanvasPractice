@@ -13,78 +13,49 @@
 </head>
 
 <body>
-    <div class="pos-f-t" >
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-light p-4">
-            <a href="../index.html"><h4 >Home</h4></a>
-        
-            <div class="card-deck">
-                <a href="../Lines/index.html" >
-                    <div class="card border-dark mb-3" style="max-width: 18rem;" >
-                        <div class="card-body">
-                            <p class="card-text"><img src="../PicsOfScreensavers/linesScreensaver.png" style="height: 50mm; width: 65mm;"></p>
-                        </div>
-                        <div class="card-footer">Lines</div>
-                    </div>
-                </a>    
-                
-                <a href="../Quilt/index.html" >
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <p class="card-text"><img src="../PicsOfScreensavers/quiltedScreensaver.png" style="height: 50mm; width: 65mm;"></p>
-                        </div>
-                        <div class="card-footer">Quilted</div>
-                    </div>
-                </a>             
-            
-                <a href="../Quilt/QuiltVariation1/index.html">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <p class="card-text"><img src="../PicsOfScreensavers/minisScreensaver.png" style="height: 50mm; width: 65mm;"></p>
-                        </div>
-                        <div class="card-footer">Minis</div>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="card-deck">    
-                <a href="../Quilt/QuiltVariation2/index.html">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <p class="card-text"><img src="../PicsOfScreensavers/overlapScreensaver.png" style="height: 50mm; width: 65mm;"></p>
-                        </div>
-                        <div class="card-footer">Overlap</div>
-                    </div>
-                </a>
-
-                <a href="index.html">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <p class="card-text"><img src="../PicsOfScreensavers/rectanglesScreensaver.png" style="height: 50mm; width: 65mm;"></p>
-                        </div>
-                        <div class="card-footer">Rectangles</div>
-                    </div>
-                </a>
-            
-                <a href="#">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <p class="card-text">Coming Soon! Will be a combo of all the other designs!</p>
-                        </div>
-                        <div class="card-footer">Mix & Match</div>
-                    </div>
-                </a>    
-            </div>
-                
-          </div>
-        </div>
-        <nav class="navbar navbar-light" style = "background-color: #e3f2fd;">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Canvas Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-    </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Lines/index.html">Lines</a> 
+                    <!-- <img src="PicsOfScreensavers/linesScreensaver.png" style="height: 50mm; width: 65mm;"> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Quilt/index.html">Quilted</a>
+                    <!-- <img src="PicsOfScreensavers/quiltedScreensaver.png" style="height: 50mm; width: 65mm;"> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Quilt/QuiltVariation1/index.html">Minis</a>
+                    <!-- <img src="PicsOfScreensavers/minisScreensaver.png" style="height: 50mm; width: 65mm;"> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Quilt/QuiltVariation2/index.html">Overlap</a>
+                    <!-- <img src="PicsOfScreensavers/overlapScreensaver.png" style="height: 50mm; width: 65mm;"> -->
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Rectangles</a>
+                    <!-- <img src="PicsOfScreensavers/rectanglesScreensaver.png" style="height: 50mm; width: 65mm;"> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mix & Match</a>
+                    <!--  <p class="card-text">Coming Soon! Will be a combo of all the other designs!</p> -->
+                </li>
+            </ul>
+            <a class="btn btn-outline-primary my-2 my-sm-0" role="button" href="https://sadia765.github.io/">Sadia's Site</a>
+            <!-- <span class="navbar-text">
+            Navbar text with an inline element
+            </span> -->
+        </div>
+    </nav>
+
     <canvas></canvas>
     <script src = "rectangles.js"></script>
     
